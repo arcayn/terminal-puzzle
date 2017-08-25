@@ -45,7 +45,7 @@ if (isset($_POST['command'])){
 							break;
 						case 'cat':
 							if (count($coms)!=2){
-								echo "<span class='red'>Error: the command 'ls' takes exactly one argument</span><br>";
+								echo "<span class='red'>Error: the command 'cat' takes exactly one argument</span><br>";
 							} else if (property_exists($users->$_POST['username']->files, $coms[1])){
 								echo $users->$_POST['username']->files->$coms[1]."<br>";
 							} else {
